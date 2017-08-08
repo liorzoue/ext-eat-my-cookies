@@ -1,0 +1,44 @@
+<div class="card">
+    <div class="title">
+        <i class="icon green-background material-icons md-white">info_outline</i>
+        <div class="text">A propos</div>
+    </div>
+
+    <div class="body row">
+        <i class="icon material-icons">call_split</i>
+        <span class="text">v.{{Manifest.version}}</span>
+    </div>
+
+    <div class="body row hover-link" ng-click="openUrl('https://git.regionsjob.com/DevOps/eat-my-cookies-extension')">
+        <i class="icon fa fa-github-alt"></i>
+        <span class="text">GitLab</span>
+    </div>
+</div>
+
+<div class="card">
+    <div class="title"> <i class="icon green-background material-icons md-white">settings</i>
+        <div class="text">Options</div>
+    </div>
+
+    <div class="body row hover-link" ng-click="toggle('AutoRefresh')">
+        <i class="icon material-icons" ng-if="!Options.AutoRefresh"></i>
+        <i class="icon material-icons" ng-if="Options.AutoRefresh">check</i>
+        <div class="text">
+            Rafraichissement auto
+        </div>
+    </div>
+    <div class="body row hover-link" ng-click="toggle('DeleteByDomain')">
+        <i class="icon material-icons" ng-if="!Options.DeleteByDomain"></i>
+        <i class="icon material-icons" ng-if="Options.DeleteByDomain">check</i>
+        <div class="text">
+            Suppression sur le domaine
+        </div>
+    </div>
+    <div class="body row hover-link" ng-click="toggle('DeleteLocalStorage')">
+        <i class="icon material-icons" ng-if="!Options.DeleteLocalStorage"></i>
+        <i class="icon material-icons" ng-if="Options.DeleteLocalStorage">check</i>
+        <div class="text">
+            Vider le LocalStorage
+        </div>
+    </div>
+</div>
