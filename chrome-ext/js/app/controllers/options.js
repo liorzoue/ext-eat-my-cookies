@@ -1,4 +1,4 @@
-EatMyCookiesApp.controller('OptionsCtrl', ['$scope', 'Manifest', 'Logging', 'EatStorage', function ($scope, Manifest, Log, Storage) {
+EatMyCookiesApp.controller('OptionsCtrl', ['$scope', 'Manifest', 'EatStorage', function ($scope, Manifest, Storage) {
 	$scope.Options = Storage.load();
 	$scope.Manifest = Manifest.getInstance();
 

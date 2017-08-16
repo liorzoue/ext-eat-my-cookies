@@ -1,4 +1,4 @@
-EatMyCookiesApp.factory('Manifest', ['$http', 'Logging', function($http, Log){
+EatMyCookiesApp.factory('Manifest', ['$http', function($http){
 	var _instance;
     var _expireAt;
 
@@ -27,14 +27,11 @@ EatMyCookiesApp.factory('Manifest', ['$http', 'Logging', function($http, Log){
 	};
 
     function Manifest() {
-        Log.write(Log.level.INFO, 'Manifest', 'singleton: update');
         return _getManifest();
     }
 
     return {
         getInstance: function () {
-            Log.write(Log.level.INFO, 'Manifest', 'singleton: get');
-
             if (_hasExpired()) {
                 _instance = new Manifest();
 

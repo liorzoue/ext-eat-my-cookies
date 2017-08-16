@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Eat my Cookies",
     "description": "Feed me !",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "permissions": [
         "cookies",
         "storage",
@@ -29,9 +29,5 @@
     "browser_action": {
         "default_icon": "img/cookie-64.png",
         "default_title": "Feed me !"
-    },
-    "author": {
-        "name": "Etienne Liorzou",
-        "email": "eliorzou@regionsjob.com"
     }
 }
