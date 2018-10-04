@@ -4,9 +4,9 @@ EatMyCookiesApp.factory('arrayService', [function(){
 			arr.splice(arr.indexOf(elt),1);
 			return arr;
 		},
-
-        hasItem: function (arr, elt) {
-            return arr.indexOf(elt) > 0;
-        }
+		
+		hasItem: function (arr, elt) {
+			return arr.indexOf(elt) > 0;
+		}
 	}
 }]);
